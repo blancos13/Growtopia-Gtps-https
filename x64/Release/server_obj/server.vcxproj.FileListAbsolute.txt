@@ -1,0 +1,6 @@
+C:\Users\altanb\Desktop\service_http-master\cpp-httplib\example\x64\Release\server_obj\server.vcxproj.CopyComplete
+C:\Users\altanb\Desktop\service_http-master\cpp-httplib\example\x64\Release\libcrypto-3-x64.dll
+C:\Users\altanb\Desktop\service_http-master\cpp-httplib\example\x64\Release\libssl-3-x64.dll
+C:\Users\altanb\Desktop\gtps http\x64\Release\server_obj\server.vcxproj.CopyComplete
+C:\Users\altanb\Desktop\gtps http\x64\Release\libcrypto-3-x64.dll
+C:\Users\altanb\Desktop\gtps http\x64\Release\libssl-3-x64.dll

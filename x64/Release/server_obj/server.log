@@ -1,0 +1,8 @@
+﻿  server.cc
+C:\Users\altanb\Desktop\gtps http\server.cc(102,5): warning C4267: 'başlatılıyor': 'size_t' - 'uint32_t' dönüşümü; veri kaybı olabilir
+  Kod üretiliyor
+  3248 of 3274 functions (99.2%) were compiled, the rest were copied from previous compilation.
+    78 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  Kodun üretilmesi tamamlandı
+  server.vcxproj -> C:\Users\altanb\Desktop\gtps http\x64\Release\server.exe
