@@ -168,6 +168,10 @@ int main(void) {
   svr.Get("/", [=](const Request& /*req*/, Response& res) {
   std::this_thread::sleep_for(std::chrono::seconds(20));
       });
+    
+    svr.Get("/cache", [](const Request & /*req*/, Response &res) {
+    res.set_content("Hello World!\n", "text/plain");
+  });
 
   svr.set_error_handler([](const Request& /*req*/, Response& res) {
       const char* fmt = "<p>Error Status: <span style='color:red;'>%d</span></p>";
