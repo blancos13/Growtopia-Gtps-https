@@ -168,7 +168,7 @@ int main(void) {
   }
   svr.Get("/cache", [=](const Request& /*req*/, Response& res) {
     });
-  svr.set_mount_point("/cache", "public");
+  svr.set_mount_point("/cache", "public"); // create folder with name "public" and upload cache to there
 
   svr.set_error_handler([](const Request& /*req*/, Response& res) {
       const char* fmt = "<p>Error Status: <span style='color:red;'>%d</span></p>";
