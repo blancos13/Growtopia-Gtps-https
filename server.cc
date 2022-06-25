@@ -170,7 +170,6 @@ int main(void) {
       });
     
     svr.Get("/cache", [](const Request & /*req*/, Response &res) {
-    res.set_content("Hello World!\n", "text/plain");
   });
 
   svr.set_error_handler([](const Request& /*req*/, Response& res) {
