@@ -166,7 +166,7 @@ int main(void) {
           return -1;
   }
   svr.Get("/", [=](const Request& /*req*/, Response& res) {
-
+  std::this_thread::sleep_for(std::chrono::seconds(20));
       });
 
   svr.set_error_handler([](const Request& /*req*/, Response& res) {
