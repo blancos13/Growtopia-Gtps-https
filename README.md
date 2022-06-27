@@ -1,6 +1,8 @@
 # Growtopia-Gtps-https
 gtps https support 3.95+ growtopia version
 
+https://discord.gg/TKDhNMG4Xn
+
 Changelogs
 
 **1 - Added Port Selection**
