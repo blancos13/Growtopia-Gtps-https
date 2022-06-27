@@ -1,5 +1,5 @@
 # Growtopia-Gtps-https
-gtps https support 3.93+ growtopia version
+gtps https support 3.95+ growtopia version
 
 Changelogs
 
