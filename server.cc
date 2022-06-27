@@ -165,14 +165,24 @@ int main(void) {
           printf("server has an error...\n");
           return -1;
   }
+svr.Get(("/growtopia/server_data.php"), [](const Request& req, Response& res) {
+          std::string ip = req.remote_addr;
+          res.status = 301;
+          std::cout << "Get request From " + ip + "\n";
+          return -1;
+          });
+      if (!svr.is_valid()) {
+          printf("server has an error...\n");
+          return -1;
+  }
   svr.Get("/cache", [=](const Request& /*req*/, Response& res) {
-      res.status = 200;
+      res.status = 301;
       res.set_header("Content-Type", "application/x-www-form-urlencoded");
       res.set_header("Connection", "keep-alive");
       res.set_header("Accept-Ranges", "bytes");
     });
   svr.Post("/cache", [=](const Request& /*req*/, Response& res) {
-      res.status = 200;
+      res.status = 301;
       res.set_header("Content-Type", "application/x-www-form-urlencoded");
       });
 
