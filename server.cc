@@ -188,12 +188,16 @@ svr.Get(("/growtopia/server_data.php"), [](const Request& req, Response& res) {
 
   svr.set_mount_point("/cache", "public");
 
-  svr.set_error_handler([](const Request& /*req*/, Response& res) {
-      const char* fmt = "<p>Error Status: <span style='color:red;'>%d</span></p>";
-      char buf[BUFSIZ];
-      snprintf(buf, sizeof(buf), fmt, res.status);
-      res.set_content(buf, "text/html");
-      });
+  svr.Get("/stop",
+          [&](const Request & /*req*/, Response & /*res*/) { svr.stop(); });
+
+  svr.set_error_handler([](const Request & /*req*/, Response &res) {
+    const char *fmt = "<p>Error Status: <span style='color:red;'>%d</span></p>";
+    char buf[BUFSIZ];
+    snprintf(buf, sizeof(buf), fmt, res.status);
+    res.set_content(buf, "text/html");
+  });
+
 
   svr.set_logger([](const Request& req, const Response& res) {
       printf("%s", log(req, res).c_str());
