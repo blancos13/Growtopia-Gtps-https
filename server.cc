@@ -195,18 +195,6 @@ svr.Get(("/growtopia/server_data.php"), [](const Request& req, Response& res) {
   svr.Get("/stop",
           [&](const Request & /*req*/, Response & /*res*/) { svr.stop(); });
     
-  svr.Get("/test", [&](const Request &req, Response &res) {
-  auto data = new std::string("abcdefg");
-
-  res.set_content_provider(
-    data->size(), // Content length
-    [data](uint64_t offset, uint64_t length, DataSink &sink) {
-      const auto &d = *data;
-      sink.write(&d[offset], std::min(length, DATA_CHUNK_SIZE));
-    },
-    [data] { delete data; });
-});
-
   svr.set_error_handler([](const Request & /*req*/, Response &res) {
     const char *fmt = "<p>Error Status: <span style='color:red;'>%d</span></p>";
     char buf[BUFSIZ];
