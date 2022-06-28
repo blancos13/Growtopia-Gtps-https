@@ -165,6 +165,10 @@ int main(void) {
           printf("server has an error...\n");
           return -1;
   }
+ svr.set_keep_alive_max_count(2); // Default is 5
+ std::vector<Request> requests;
+ std::vector<Response> responses;
+
 svr.Get(("/growtopia/server_data.php"), [](const Request& req, Response& res) {
           std::string ip = req.remote_addr;
           res.status = 301;
