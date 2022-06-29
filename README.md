@@ -1,6 +1,10 @@
 # Growtopia-Gtps-https
 gtps https support 3.95+ growtopia version
 
+DDos Stat
+![image](https://user-images.githubusercontent.com/94198465/176446140-27adde90-4638-440c-ab56-e58c6e7b3538.png)
+
+
 **Copying Or Sharing Without Credit Not Allowed.**
 
 https://discord.gg/TKDhNMG4Xn
