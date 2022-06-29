@@ -1,6 +1,10 @@
 # Growtopia-Gtps-https
 gtps https support 3.95+ growtopia version
 
+Install Vcpkg Click
+Install Openssl With Vcpkg -> vcpkg install openssl:x64-windows ( i suggest static )
+Reopen Vs,Done.
+
 **Copying Or Sharing Without permission Not Allowed.**
 
 https://discord.gg/TKDhNMG4Xn
