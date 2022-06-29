@@ -11,6 +11,8 @@ https://discord.gg/TKDhNMG4Xn
 
 Changelogs
 
+Anti Ddos Added
+
 **1 - Added Port Selection**
 
 **2 - added custom item support**
