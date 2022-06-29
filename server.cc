@@ -138,8 +138,7 @@ std::map<const std::string, long long> cooldown = {
 
 int main(void) {
 
-  std::cout << "[PREMIUM] Premium Version (Support Custom items + Anti ddos) for Sale Dls Dm - Altanb#3535 " << std::endl;
-  std::cout << "[INFO] Altanb - Http Official Server https://discord.gg/TKDhNMG4Xn" << std::endl;
+  std::cout << "[CREDIT] Altanb#3535 " << std::endl; // do not remove this
   std::cout << "[SERVER] Server Port? (Example 17091)" << std::endl;
   std::cin >> server_port;
   std::cout << "[SERVER] HTTPS Web Server is running with details 127.0.0.1:443 Port " << server_port << std::endl;
