@@ -1,3 +1,6 @@
+Altanb - Http discord server : (Anti Ddos Http 5dl)
+https://discord.gg/TKDhNMG4Xn
+
 # Growtopia-Gtps-https
 gtps https support 3.95+ growtopia version
 
@@ -7,7 +10,6 @@ DDos Stat
 
 **Copying Or Sharing Without Credit Not Allowed.**
 
-https://discord.gg/TKDhNMG4Xn
 
 Changelogs
 
